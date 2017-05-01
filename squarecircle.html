@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+<body onload=" draw()">
+<canvas id="sketch" width="600" height="600"></canvas>
+<script type="text/javascript">
+//
+  function draw(){
+
+//            Draw a black square
+
+      var sketch = document.getElementById('sketch');
+      var context = sketch.getContext("2d");
+
+//            Define shape 'Rect uses a RECTANGLE / Sqaure '
+        context.fillRect(10 ,10, 200, 200);
+
+//            Define color 'Fills the shape with color entered in qoutes'
+        context.fillStyle = "ff0000";
+
+//            Draw a circle
+
+//            Define color
+      context.fillStyle = "ff0000";
+//
+      context.beginPath();
+//
+      context.arc(360, 120, 100, 0, 2 * Math.PI, true);
+//
+      context.closePath();
+//
+      context.fill();
+
+          }
+
+</script>
+</body>
+</html>
