@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+<body onload=" draw()">
+<canvas id="sketch" width="1080" height="1920"></canvas>
+<script type="text/javascript">
+//
+  function draw(){
+
+//            Draw a black square
+      var sketch = document.getElementById('sketch');
+      var context = sketch.getContext("2d");
+//            Draw a circle
+//------------------------------------------------------
+
+
+  var radQ = prompt("Enter a radius");
+  var radNum = parseInt(radQ, 10);
+
+
+  var Col = prompt("Enter a color");
+
+  if(Col == "red"){
+
+  context.fillStyle = "#ff0000";
+
+  }else if (Col == "green"){
+
+  context.fillStyle = "#00ff00";
+
+  }else if (Col == "blue"){
+
+  context.fillStyle = "#0000ff";
+
+  }else{
+
+  context.fillStyle = "#000000"
+
+  }
+  context.beginPath();
+//
+  context.arc(360, 300, radNum, 0, 2 * Math.PI, true);
+//
+  context.closePath();
+//
+  context.fill();
+
+}
+</script>
+</body>
+</html>
