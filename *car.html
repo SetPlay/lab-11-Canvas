@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body onload="draw()">
+<canvas id="sketch" width="300" height="300">
+</canvas>
+<script>
+
+function draw() {
+
+
+var sketch = document.getElementById('sketch');
+
+var context = sketch.getContext("2d");
+
+//CarBody
+context.fillStyle = "#00ff00";
+
+context.fillRect(100, 100, 120, 40);
+
+//Car top
+context.fillStyle = "#0000ff";
+
+context.fillRect(115, 75, 90, 25);
+
+
+//Left wheel
+context.fillStyle = "#ff00ff";
+context.beginPath();
+
+context.arc( 120, 140, 15, 0, 2 * Math.PI);
+
+context.closePath();
+
+context.fill();
+
+//Left wheel
+context.fillStyle = "#ff00ff";
+context.beginPath();
+
+context.arc( 180, 140, 15, 0, 2 * Math.PI);
+
+context.closePath();
+
+context.fill();
+
+}
+</script>
+</body>
