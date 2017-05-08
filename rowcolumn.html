@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>row loop</title>
+	<title>row column</title>
 </head>
 <body onload="draw()">
 <canvas id="sketch" width="1920" height="1080">
@@ -15,7 +15,7 @@ for (var i = 1; i < 6; i = i + 1){
 	var context = sketch.getContext("2d");
 	context.fillStyle = "#b0e2ff"
 	context.beginPath();
-	context.arc(20*i*3, 150, 25, 0, 2 * Math.PI, true);
+	context.arc(30, 20*i*3, 25, 0, 2 * Math.PI, true);
 	context.closePath();
 	context.fill();
 
